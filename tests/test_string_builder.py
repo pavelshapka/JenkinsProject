@@ -8,11 +8,11 @@ class Test_string_builder(unittest.TestCase):
     def setUp(self) -> None:
         self.string_builder = app.String_builder()
     
-    def test_add(self):
+    def test_add(self) -> None:
         self.string_builder.add_after("Hello")
         self.assertEqual(self.string_builder.add_after(", World!").build(), "Hello, World!")
 
-    def test_sub(self):
+    def test_sub(self) -> None:
         self.string_builder.add_after("Hello")
         self.assertEqual(self.string_builder.add_before(", World!").build(), ", World!Hello")
 
