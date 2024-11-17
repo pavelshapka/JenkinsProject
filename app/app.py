@@ -32,4 +32,4 @@ class String_builder():
     
 if __name__ == "__main__":
     with open("run_check.txt", "w") as f:
-        f.write(String_builder().add_after("World!").add_before("Hello, ").build())
+        f.write(String_builder().add_after("World!").add_before("Hello, ").build_string())
