@@ -1,7 +1,9 @@
 import unittest
+import allure
 from app import app
 
 
+@allure.feature('Тест арифметических функций')
 class Test_calculator(unittest.TestCase):
     def setUp(self) -> None:
         self.calculator = app.Calculator()

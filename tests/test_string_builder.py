@@ -1,7 +1,9 @@
 import unittest
+import allure
 from app import app
 
 
+@allure.feature('Тест конструктора строк')
 class Test_string_builder(unittest.TestCase):
     def setUp(self) -> None:
         self.string_builder = app.String_builder()
