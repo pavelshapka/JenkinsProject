@@ -10,7 +10,7 @@ class Test_string_builder(unittest.TestCase):
     
     def test_add(self):
         self.string_builder.add_after("Hello")
-        self.assertEqual(self.string_builder.add_after(", World!").build(), "Hello, World!")
+        self.assertEqual(self.string_builder.add_after(", World!").build(), "Hello, World11!")
 
     def test_sub(self):
         self.string_builder.add_after("Hello")
