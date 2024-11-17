@@ -10,11 +10,11 @@ class Test_string_builder(unittest.TestCase):
     
     def test_add(self) -> None:
         self.string_builder.add_after("Hello")
-        self.assertEqual(self.string_builder.add_after(", World!").build(), "Hello, World!")
+        self.assertEqual(self.string_builder.add_after(", World!").build_string(), "Hello, World!")
 
     def test_sub(self) -> None:
         self.string_builder.add_after("Hello")
-        self.assertEqual(self.string_builder.add_before(", World!").build(), ", World!Hello")
+        self.assertEqual(self.string_builder.add_before(", World!").build_string(), ", World!Hello")
 
 if __name__ == "__main__":
     unittest.main()

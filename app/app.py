@@ -27,9 +27,9 @@ class String_builder():
         self.buffer = [new] + self.buffer
         return self
 
-    def build(self) -> str:
+    def build_string(self) -> str:
         return ''.join(self.buffer)
     
 if __name__ == "__main__":
     with open("run_check.txt", "w") as f:
-        f.write(String_builder().add_after("Hello").add_before("World").build())
+        f.write(String_builder().add_after("World!").add_before("Hello, ").build())
