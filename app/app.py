@@ -29,3 +29,7 @@ class String_builder():
 
     def build(self) -> str:
         return ''.join(self.buffer)
+    
+if __name__ == "__main__":
+    with open("run_check.txt", "w") as f:
+        f.write(String_builder().add_after("Hello").add_before("World").build())
